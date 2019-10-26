@@ -1,5 +1,27 @@
-<ul>
-	{% for doc in docs %}
-		<li>{{ doc }}</li>
-	{% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/uikit.min.css">
+	<script type="text/javascript" src="uikit.min.js"></script>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/customer.css">
+</head>
+
+<body>
+	<div>
+		<ul id="article_list">
+			{% for article in article_list%}
+				<div class="uk-article-divider">
+					<a class="flag">原创</a>
+					<a class="uk-article-title">{{ article.title }}</a><br>
+					<a class="uk-article-meta">{{ article.author }}</a>
+					<a class="uk-article-meta">{{ article.update_time }}</a><br><br>
+					<a class="uk-article-meta">{{ article.content }}</a>
+				</div>
+				<hr>
+			{% endfor %}
+		</ul>
+	</div>
+</body>
+</html>

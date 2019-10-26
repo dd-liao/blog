@@ -11,7 +11,7 @@ class ArticleTab(models.Model):
 	author = models.CharField(max_length=128,default="")
 	create_time = models.PositiveIntegerField(default=1218154088)
 	update_time = models.PositiveIntegerField(default=1218154088)
-	body = models.TextField(default="")
+	content = models.TextField(default="")
 
 	class Meta:
 		db_table = 'article_tab'

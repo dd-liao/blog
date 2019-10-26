@@ -35,3 +35,7 @@
 * 将需要管理的model加入到admin.py中
 
 * 下载uikit和jquery框架， 在libs中创建css，js文件见，将下载的框架文件分别放在这两个文件夹下
+
+* 将libs目录改名为static目录，编写home.html模版
+
+* brew install node 安装node， 再安装插件prettify， 可以格式化css代码(node -v 查看是否安装成功,shift+command 格式化代码)
